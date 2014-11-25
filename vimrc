@@ -450,3 +450,44 @@ inoremap <Esc>D <left>
 if has("balloon_eval")
   set noballooneval
 endif
+
+
+let g:airline_powerline_fonts = 1
+let g:indentLine_char = '│'
+let g:indentLine_color_term = 239
+
+set ttyfast
+
+
+set nobackup
+set nowritebackup
+set noswapfile
+let g:user_emmet_mode='a'
+set linespace=1
+
+set clipboard=unnamed
+
+
+if has("gui_gtk2")
+    "echo "yes, we have a GUI"
+    set mouse=a
+else
+    "echo "Boring old console"
+    set mouse=
+endif
+
+set synmaxcol=128
+
+vmap <C-C>   "+y
+vmap <C-V>   "+p
+
+let g:neocomplete#enable_at_startup = 1
+let $SNIPPETS='./snippets'
+let $ULTISNIP='./UltiSnip'
+set runtimepath+=$SNIPPETS
+set runtimepath+=$ULTISNIP
+
+let g:jedi#auto_initialization = 0
+
+set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
+
