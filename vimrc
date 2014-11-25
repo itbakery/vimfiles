@@ -487,7 +487,7 @@ let $ULTISNIP='./UltiSnip'
 set runtimepath+=$SNIPPETS
 set runtimepath+=$ULTISNIP
 
-let g:jedi#auto_initialization = 0
+"let g:jedi#auto_initialization = 0
 
 set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
 
